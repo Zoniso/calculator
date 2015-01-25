@@ -31,6 +31,5 @@ describe('test the brain function using stubs(spies) for the other functions', f
     });
 
     it('should make sure that digit value calls getInput with the digit and the previous response', function(){
-        expect(true).toBe(true);
     });
 });
