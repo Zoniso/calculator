@@ -3,8 +3,10 @@ function Calculator() {
     //var valA = '', valB = '', action = ''; //These variables will hold the desired numbers and math operation
     //var IsA = true, IsB, IsAction; //flags which will reflect which value is relevant ATM
     //var PrevResponse={0:'', 1:'', 2:''};
-    //var response={0:'', 1:'', 2:''};
+    //var first = false;
     //var self = this;
+    var test = false;
+    var response = {0:'', 1:'', 2:''};
 
     setTimeout(
         function () {
@@ -13,7 +15,7 @@ function Calculator() {
         }, 2000);
 
     this.brain = function (val) { //This function will call the other functions by order
-        var response = this.getResponse();
+        response = this.getResponse();
         if (val === 'C') { //user wants to clear the screen
             response = this.resetData();
             this.printToScreen('0');
@@ -30,7 +32,7 @@ function Calculator() {
             }
             else {
                 console.log('invalid input');
-                this.printToScreen('0');
+                //this.printToScreen('0');
             }
         }
         else {//user input for valA, valB, action
@@ -46,7 +48,7 @@ function Calculator() {
     };
 
     this.getResponse = function(){
-        return {0:'', 1:'', 2:''};
+        return response;
     };
 
     this.getInput = function (val, PrevResponse) { //this function will get and save the input from the user into it's return value {0: valueA, 1: action, 2: valueB}
