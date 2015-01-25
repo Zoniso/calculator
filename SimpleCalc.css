@@ -1,0 +1,61 @@
+.content{
+    display:none;
+}
+.loading{
+    display: block;
+    /*top: 200 px;*/
+    /*margin: auto;*/
+    /*position: absolute;*/
+    /*z-index: 1000;*/
+    /*width: 160px;*/
+    /*height: 24px;*/
+    /*background: '/Users/ornazonis/Downloads/page-loader.gif' no-repeat;*/
+    /*cursor: wait;*/
+}
+#board{
+    height: 300px;
+    width: 450px;
+    background-color: darkcyan;
+    position: absolute;
+}
+#screen{
+    height: 50px;
+    width: 280px;
+    background-color: palegreen;
+    margin-left: 85px;
+    margin-top: 15px;
+}
+button {
+    background-color: steelblue;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#num {
+    margin-left: 40px;
+    margin-top: 10px;
+    float: left;
+    width: 200px;
+}
+#action{
+    float: right;
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+.reset {
+    width: 110px;
+}
+input {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 280px;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 1px;
+}
